@@ -36,7 +36,7 @@ void loop() {
   String ts = String(tuplef) + String(getTemp()) + String(tupleb);
 
   Serial.println(ts);
-  httpClient.begin("http://ryusei-linda.herokuapp.com/house");
+  httpClient.begin("********.com");
   httpClient.addHeader("Content-Type", "application/x-www-form-urlencoded");
   int httpCode = httpClient.POST(ts);
   httpClient.writeToStream(&Serial);
